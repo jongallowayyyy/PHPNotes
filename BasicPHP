@@ -1,0 +1,41 @@
+PHP 'echo' and 'print' Statements
+echo and print are more or less the same. They are both used to output data to the screen.
+The differences are small: echo has no return value while print has a return value of 1 so it can be used in expressions.
+echo can take multiple parameters (although such usage is rare) while print can take one argument.
+echo is marginally faster than print, which is why it is most commonly used.
+
+-------
+
+Single Line Comments
+Single line comments can also be written using #
+
+# this is a comment line
+// this is a comment line
+/* this is a comment line */
+
+
+DocBlock Formatting
+A DocBlock is always associated with one, and just one, Structural Element in PHP; so this may either be a file, class, interface, trait, function, constant, method, property or variable. Using a DocBlock you are able to effectively document your application, by describing the function of, and relations between, elements in your source code.
+In reality a DocBlock is in fact the name for a combination of a, so-called, DocComment and a block of the PHPDoc Domain Specific Language (DSL). A DocComment is the container that contains documentation that can be formatted according to the PHPDoc Standard.
+Commonly a piece of PHPDoc consists of the following three parts in order of appearance:
+Summary A short piece of text, usually one line, providing the basic function of the associated element.
+Description An optional longer piece of text providing more details on the associated element’s function. This is very useful when working with a complex element.
+A series of tags These provide additional information in a structured manner. With these tags you can link to other elements, provide type information for properties and arguments, and more.
+
+-------------
+
+The type of a variable is not usually set by the programmer; rather, it is decided at runtime by PHP depending on the context in which that variable is used. PHP supports eight primitive types.
+
+Four scalar types:
+boolean
+integer
+float (floating-point number, aka double)
+string
+Two compound types:
+array
+object
+And finally two special types:
+resource
+NULL
+Why variables can't start with a number.
+This is a standard for all programming languages. Primarily to standardize between languages whose variables do not start with a symbol. It is easier for a compiler to make an assumption that if a token begins with a number, it is most likely a numeric value rather than a variable name and any non-numeric characters that are a part of the token would assist in determining the numeric type or number system (12e5 is a valid number).
